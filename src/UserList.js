@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
+import useFetch from "./useFetch";
 
 function UserList() {
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
+  const { data: users, loading, error} = useFetch('https://jsonplaceholder.typicode.com/users');
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => setUsers(data))
-    .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  // useEffect(() => {
+  //   fetch('https://jsonplaceholder.typicode.com/users')
+  //   .then(response => response.json())
+  //   .then(data => setUsers(data))
+  //   .catch(error => console.error('Error fetching data:', error));
+  // }, []);
 
   return (
     <div>
