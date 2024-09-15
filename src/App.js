@@ -6,6 +6,7 @@ import './App.css';
 import ConditionalRendering from './ConditionalRendering';
 import ItemList from './ItemList';
 import EffectExample from './EffectExample';
+import UserList from './UserList';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <ConditionalRendering />
         <ItemList />
         <EffectExample />
+        <UserList />
         <a
           className="App-link"
           href="https://reactjs.org"
