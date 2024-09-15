@@ -3,6 +3,8 @@ import Hello from './Hello';
 import Counter from './Counter';
 import Form from './Form';
 import './App.css';
+import ConditionalRendering from './ConditionalRendering';
+import ItemList from './ItemList';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Hello name="Jane Smith" message="Props make components dynamic!"/>
         <Counter />
         <Form />
+        <ConditionalRendering />
+        <ItemList />
         <a
           className="App-link"
           href="https://reactjs.org"
