@@ -7,6 +7,7 @@ import ConditionalRendering from './ConditionalRendering';
 import ItemList from './ItemList';
 import EffectExample from './EffectExample';
 import UserList from './UserList';
+import UserProfile from './UserProfile';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         >
           Learn React
         </a>
+        <UserProfile />
       </header>
     </div>
   );

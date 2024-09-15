@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import AppContext from "./AppContext";
 
 function EffectExample() {
-  const [count, setCount] = useState(0);
+  const {count, setCount} = useContext(AppContext);
 
   useEffect (() => {
     document.title = `You clicked ${count} times`;

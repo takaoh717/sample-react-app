@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import AppContext from './AppContext';
 
 function Counter() {
 
-  const [count, setCount] = useState(0);
+  const { count, setCount } = useContext(AppContext);
+
+  console.log({ count, setCount });
+  if (count === undefined || setCount === undefined) {
+    return <div>Error: Context not provided</div>;
+  }
 
   return (
     <div>
