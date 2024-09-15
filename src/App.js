@@ -5,6 +5,7 @@ import Form from './Form';
 import './App.css';
 import ConditionalRendering from './ConditionalRendering';
 import ItemList from './ItemList';
+import EffectExample from './EffectExample';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Form />
         <ConditionalRendering />
         <ItemList />
+        <EffectExample />
         <a
           className="App-link"
           href="https://reactjs.org"
