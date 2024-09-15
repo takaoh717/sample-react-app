@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import Hello from './Hello';
+import Counter from './Counter';
+import Form from './Form';
 import './App.css';
 
 function App() {
@@ -8,7 +11,13 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          yahoo!
         </p>
+        <Hello name="React Developer" message="This is a message passed via props!"/>
+        <Hello name="John Doe" message="Learning React step by step."/>
+        <Hello name="Jane Smith" message="Props make components dynamic!"/>
+        <Counter />
+        <Form />
         <a
           className="App-link"
           href="https://reactjs.org"
